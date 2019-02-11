@@ -32,7 +32,7 @@ const GuidelinesConfig: StatelessComponent<Props> = ({ disabled }) => (
           Show Community Guidelines Summary
         </InputLabel>
       </Localized>
-      <OnOffField name="communityGuidelinesEnable" disabled={disabled} />
+      <OnOffField name="communityGuidelines.enabled" disabled={disabled} />
     </FormField>
 
     <FormField>
@@ -55,7 +55,7 @@ const GuidelinesConfig: StatelessComponent<Props> = ({ disabled }) => (
       </Localized>
     </FormField>
 
-    <Field name="communityGuidelines">
+    <Field name="communityGuidelines.content">
       {({ input, meta }) => (
         <>
           <Suspense fallback={<Spinner />}>
