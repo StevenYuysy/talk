@@ -11,7 +11,7 @@ import { StreamQueryLocal as Local } from "talk-stream/__generated__/StreamQuery
 import { Delay, Spinner } from "talk-ui/components";
 import StreamContainer from "../containers/StreamContainer";
 
-interface InnerProps {
+interface Props {
   local: Local;
 }
 
@@ -47,7 +47,7 @@ export const render = ({
   );
 };
 
-const StreamQuery: StatelessComponent<InnerProps> = ({
+const StreamQuery: StatelessComponent<Props> = ({
   local: { storyID, storyURL },
 }) => (
   <QueryRenderer<QueryTypes>
